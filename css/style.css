@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,700&display=swap");
+
+body {
+  font-family: "Lato", sans-serif;
+  color: rgb(71, 63, 63);
+  font-weight: 600;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+}
+
+[class*="__container"] {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+main {
+  margin-top: 100px;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding: 25px;
+  background-color: rgb(209, 47, 161);
+  z-index: 100;
+}
+
+.header__container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header__menu {
+}
+
+.menu {
+  font-size: 0;
+}
+
+.menu__item {
+  position: relative;
+  display: inline-block;
+  color: aliceblue;
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 100px;
+}
+
+.menu__item:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+}
+
+.menu__link {
+  font-size: 16px;
+  color: rgb(222, 223, 234);
+  display: inline-block;
+  padding: 5px 0px;
+}
+
+.sub-menu {
+  background-color: #6f1d58;
+  padding: 15px;
+  position: absolute;
+  min-width: 180px;
+  top: 130%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease 0s;
+}
+
+.sub-menu__item {
+}
+
+.sub-menu__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.sub-menu__link {
+  font-size: 16px;
+  color: #fff;
+}
+
+h5 {
+  text-align: center;
+}
+.relative-one__container {
+  border: 1px solid grey;
+  max-width: 700px;
+  padding: 10px;
+}
+
+.relative-one__block-1 {
+  background-color: aqua;
+  height: 60px;
+  position: relative;
+}
+
+.relative-one__block-2 {
+  background-color: rgb(228, 125, 219);
+  height: 60px;
+  position: relative;
+  top: 30px;
+}
+
+.relative-one__block-3 {
+  background-color: rgb(49, 244, 56);
+  height: 60px;
+  position: relative;
+}
+
+.relative-two__container {
+  border: 1px solid grey;
+  max-width: 700px;
+  padding: 10px;
+}
+
+.relative-two__block-1 {
+  background-color: aqua;
+  height: 60px;
+}
+
+.relative-two__block-2 {
+  background-color: rgb(228, 125, 219);
+  height: 60px;
+  position: relative;
+  bottom: 40px;
+}
+
+.relative-two__block-3 {
+  background-color: rgb(49, 244, 56);
+  height: 60px;
+}
+
+.relative-three__container {
+  border: 1px solid grey;
+  max-width: 700px;
+  padding: 10px;
+}
+
+.relative-three__block-1 {
+  background-color: aqua;
+  height: 60px;
+}
+
+.relative-three__block-2 {
+  background-color: rgb(228, 125, 219);
+  height: 60px;
+  position: relative;
+  right: 50px;
+  top: 35px;
+}
+
+.relative-three__block-3 {
+  background-color: rgb(49, 244, 56);
+  height: 60px;
+}
+
+.relative-four__container {
+  border: 1px solid grey;
+  max-width: 700px;
+  padding: 10px;
+}
+
+.relative-four__block-1 {
+  background-color: aqua;
+  height: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.relative-four__block-2 {
+  background-color: rgb(228, 125, 219);
+  height: 60px;
+  position: relative;
+  z-index: 5;
+}
+
+.relative-four__block-3 {
+  background-color: rgb(49, 244, 56);
+  height: 60px;
+  position: relative;
+  left: 40px;
+  bottom: 50px;
+  z-index: 3;
+}
+.fixed__container {
+  border: 1px solid grey;
+  max-width: 700px;
+  padding: 10px;
+}
+
+.fixed__block-1 {
+  background-color: rgb(56, 194, 232);
+  height: 60px;
+}
+
+.fixed__block-2 {
+  background-color: rgb(208, 14, 72);
+  height: 60px;
+  position: fixed;
+  bottom: 400px;
+  left: 0px;
+  color: antiquewhite;
+}
+
+.fixed__block-3 {
+  background-color: rgb(228, 214, 16);
+  height: 60px;
+}
+.absolute__container {
+  border: 1px solid grey;
+  max-width: 700px;
+  padding: 10px;
+}
+
+.absolute__block-1 {
+  background-color: rgb(238, 44, 209);
+  height: 60px;
+  position: absolute;
+  top: 1550px;
+  left: 200px;
+  color: #fff;
+}
+
+.absolute__block-2 {
+  background-color: rgb(148, 122, 250);
+  height: 60px;
+}
+
+.absolute__block-3 {
+  background-color: rgb(99, 242, 37);
+  height: 60px;
+}
+.sticky__container {
+  border: 1px solid grey;
+  width: 700px;
+  padding: 10px;
+  height: 150px;
+  overflow: scroll;
+  padding-top: 0px;
+}
+
+.sticky__block-1 {
+  background-color: rgb(22, 240, 222);
+  height: 60px;
+  position: sticky;
+  top: 0px;
+}
+
+.sticky__block-2 {
+  background-color: rgb(227, 89, 112);
+  height: 60px;
+}
+
+.sticky__block-3 {
+  background-color: rgb(191, 85, 226);
+  height: 60px;
+}
+.sticky__block-4 {
+  background-color: rgb(222, 227, 67);
+  height: 60px;
+}
+
+.sticky__block-5 {
+  background-color: rgb(231, 115, 84);
+  height: 60px;
+}
+
+.sticky__block-6 {
+  background-color: rgb(87, 85, 226);
+  height: 60px;
+}
+
+.sticky__block-7 {
+  background-color: rgb(227, 89, 112);
+  height: 60px;
+}
+
+.sticky__block-8 {
+  background-color: rgb(191, 85, 226);
+  height: 60px;
+}
+.sticky__block-9 {
+  background-color: rgb(222, 227, 67);
+  height: 60px;
+}
+
+.sticky__block-10 {
+  background-color: rgb(231, 115, 84);
+  height: 60px;
+}
+
+.sticky__block-11 {
+  background-color: rgb(87, 85, 226);
+  height: 60px;
+}
+
+img {
+  max-width: 100%;
+}
+.car__container {
+  position: relative;
+}
+.car__carcass {
+  position: absolute;
+  top: 500px;
+  left: 380px;
+}
+.car__back-wheel {
+  position: absolute;
+  top: 567px;
+  right: 620px;
+}
+.car__front-wheel {
+  position: absolute;
+  top: 567px;
+  left: 392px;
+}
+.car__light {
+  position: absolute;
+  top: 530px;
+  left: 392px;
+}
